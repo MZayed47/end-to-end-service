@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  demo-project:
+    build: .
+    command: python api_v1.py
+    restart: unless-stopped
+    ports:
+      - "5001:5001"
